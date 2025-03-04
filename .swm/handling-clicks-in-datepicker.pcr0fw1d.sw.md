@@ -9,23 +9,23 @@ Here is a high level diagram of the flow, showing only the most important functi
 
 ```mermaid
 graph TD;
-      subgraph src/main/webapp/js/lib
+      subgraph "src/…/js/lib"
 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate)
 end
 
-subgraph src/main/webapp/js/lib
+subgraph "src/…/js/lib"
 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle
 end
 
-subgraph src/main/webapp/js/lib
+subgraph "src/…/js/lib"
 bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 5011f9474dee0e0405fb8996a869aaff1bc0517f50e773abb996e79485926e89(fill)
 end
 
-subgraph src/main/webapp/js/lib
+subgraph "src/…/js/lib"
 bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle
 end
 
-subgraph src/main/webapp/js/lib
+subgraph "src/…/js/lib"
 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle --> 9d565e6fede5bda4f279be66ab7c3984d668f9d3a43c5443e4d00e3fbf4ddd4a(exec):::mainFlowStyle
 end
 
@@ -38,23 +38,23 @@ classDef Style3 color:#000000,fill:#AA7CB9
 
 %% Swimm:
 %% graph TD;
-%%       subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%%       subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate)
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%% subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%% subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 5011f9474dee0e0405fb8996a869aaff1bc0517f50e773abb996e79485926e89(fill)
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%% subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%% subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle --> 9d565e6fede5bda4f279be66ab7c3984d668f9d3a43c5443e4d00e3fbf4ddd4a(exec):::mainFlowStyle
 %% end
 %% 
@@ -72,23 +72,23 @@ First, we'll zoom into this section of the flow:
 
 ```mermaid
 graph TD;
-      subgraph src/main/webapp/js/lib/datepicker/datepicker.js
+      subgraph "src/…/datepicker/datepicker.js"
 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate)
 end
 
-subgraph src/main/webapp/js/lib/datepicker/datepicker.js
+subgraph "src/…/datepicker/datepicker.js"
 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle
 end
 
-subgraph src/main/webapp/js/lib/datepicker/datepicker.js
+subgraph "src/…/datepicker/datepicker.js"
 bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> hbue7(...)
 end
 
-subgraph src/main/webapp/js/lib/datepicker/datepicker.js
+subgraph "src/…/datepicker/datepicker.js"
 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate) --> 447efb7ad53dd24bcf2d3d84d063dc874767dc4eccfba332c2dc2ff69b463835(hide)
 end
 
-subgraph src/main/webapp/js/lib/datepicker/datepicker.js
+subgraph "src/…/datepicker/datepicker.js"
 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate) --> 5011f9474dee0e0405fb8996a869aaff1bc0517f50e773abb996e79485926e89(fill)
 end
 
@@ -101,23 +101,23 @@ classDef Style3 color:#000000,fill:#AA7CB9
 
 %% Swimm:
 %% graph TD;
-%%       subgraph <SwmPath>[src/main/webapp/js/lib/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>
+%%       subgraph "<SwmPath>[src/…/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>"
 %% 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate)
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>
+%% subgraph "<SwmPath>[src/…/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>"
 %% 89769cda9ddde622ead58ef61342c3a5f67f00d90465ff73dd63e43475014ded(click):::mainFlowStyle --> bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>
+%% subgraph "<SwmPath>[src/…/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>"
 %% bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> hbue7(...)
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>
+%% subgraph "<SwmPath>[src/…/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>"
 %% 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate) --> 447efb7ad53dd24bcf2d3d84d063dc874767dc4eccfba332c2dc2ff69b463835(hide)
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>
+%% subgraph "<SwmPath>[src/…/datepicker/datepicker.js](src/main/webapp/js/lib/datepicker/datepicker.js)</SwmPath>"
 %% 8d8dbbde8e7a85e4fb7e9e847f6daf4b53fed0742e0b2270a4754f14021b5a1e(_setDate) --> 5011f9474dee0e0405fb8996a869aaff1bc0517f50e773abb996e79485926e89(fill)
 %% end
 %% 
@@ -277,15 +277,15 @@ Now, lets zoom into this section of the flow:
 
 ```mermaid
 graph TD;
-      subgraph src/main/webapp/js/lib
+      subgraph "src/…/js/lib"
 bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 5011f9474dee0e0405fb8996a869aaff1bc0517f50e773abb996e79485926e89(fill)
 end
 
-subgraph src/main/webapp/js/lib
+subgraph "src/…/js/lib"
 bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle
 end
 
-subgraph src/main/webapp/js/lib
+subgraph "src/…/js/lib"
 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle --> 9d565e6fede5bda4f279be66ab7c3984d668f9d3a43c5443e4d00e3fbf4ddd4a(exec):::mainFlowStyle
 end
 
@@ -298,15 +298,15 @@ classDef Style3 color:#000000,fill:#AA7CB9
 
 %% Swimm:
 %% graph TD;
-%%       subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%%       subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 5011f9474dee0e0405fb8996a869aaff1bc0517f50e773abb996e79485926e89(fill)
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%% subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% bb4ba648bc3810a172b8e3bdda1d4fb698a676cbc1ce1bfd0933c921cb0be128(update):::mainFlowStyle --> 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle
 %% end
 %% 
-%% subgraph <SwmPath>[src/main/webapp/js/lib/](src/main/webapp/js/lib/)</SwmPath>
+%% subgraph "<SwmPath>[src/…/js/lib/](src/main/webapp/js/lib/)</SwmPath>"
 %% 50ab64824b3f640c78afe95fb03fc21531de62eca0527b089442316b416fe9c1(parseDate):::mainFlowStyle --> 9d565e6fede5bda4f279be66ab7c3984d668f9d3a43c5443e4d00e3fbf4ddd4a(exec):::mainFlowStyle
 %% end
 %% 
@@ -430,4 +430,4 @@ The <SwmToken path="src/main/webapp/js/lib/ckeditor/4.4.0/plugins/justify/plugin
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBZ3JlZW5maWVsZC1lY29tbWVyY2UlM0ElM0FTd2ltbS1EZW1v" repo-name="greenfield-ecommerce" doc-type="flows"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBZ3JlZW5maWVsZC1lY29tbWVyY2UlM0ElM0FTd2ltbS1EZW1v" repo-name="greenfield-ecommerce"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>
